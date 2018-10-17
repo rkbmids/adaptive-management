@@ -37,10 +37,10 @@ The customer who wants to study the population and unemployment rate per county 
 SELECT COUNTY_NAME, unemployment_rate.YEAR, UNEMPLOYMENT_RATE, POPULATION FROM unemployment_rate LEFT JOIN population ON unemployment_rate.COUNTY_NAME=population.AREA_NAME AND unemployment_rate.YEAR=population.YEAR;
 ```
 # Data Sources
-##Parent Folders
+## Parent Folders
 Population: https://www2.census.gov/programs-surveys/popest/datasets/
 Unemployment: https://www.bls.gov/lau/
-##Note
+## Note
 Data included from 2010-2017- while the unemployment data function can easily pull
 all years of data, I mistakenly used a format for the population data not available
 prior to 2010, and would have to rework that part of the code to extend the range
